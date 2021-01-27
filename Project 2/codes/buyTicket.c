@@ -195,6 +195,7 @@ void noReserve(Category (*categories)[], int *total, Report (*salesReport)[])
     (*salesReport)[choice-1].quantity += adult + children;
     (*salesReport)[choice-1].price += tempPrice;
     (*salesReport)[choice-1].tax += tax;
+    fclose(file);
 
     printf("\n\n\t\t\tpress ANY key to RETURN");
     char ret = getch();
