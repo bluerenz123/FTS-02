@@ -135,7 +135,11 @@ void noReserve(Category (*categories)[], int *total, Report (*salesReport)[])
     // Prompt user for destination code and number of adults
     printf("\n\n\t\t\tSelect destination: ");
     scanf("%d", &choice);
-
+    
+    if(choice == *total + 1)
+    {
+        return;
+    }
     if(choice > *total)
     {
         printf("\n\t\t\t Invalid code");

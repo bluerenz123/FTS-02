@@ -145,7 +145,7 @@ void editDestination(Category (*categories)[], int *total)
     // User's display, gathering datas
     printf("\n\t\t\tEnter destination code: ");
     scanf("%d", &destChoice);
-    if(destChoice > *total)
+    if(destChoice > *total || destChoice <= 0)
     {
         printf("\n\t\t\tInvalid input");
         editDestination(categories, total);

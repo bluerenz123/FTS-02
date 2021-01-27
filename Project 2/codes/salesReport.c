@@ -24,6 +24,7 @@ void salesReportDisplay(Report (*salesReport)[], int *total)
     {
         fprintf(file, "\n\t\t\t%-14s %-9d %-10.2f %.2f", (*salesReport)[i].destination, (*salesReport)[i].quantity, (*salesReport)[i].price, (*salesReport)[i].tax);
     }
+    fclose(file);
 
     printf("\n\n\t\t\tPress any key to RETURN");
     char ret = getch();
