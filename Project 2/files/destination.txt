@@ -1,0 +1,7 @@
+Destination     Price per Destination Travel tax
+
+Maldives          21000           3%
+Macau             50000           7%
+Iceland           27000           12%
+Poland            32000           15%
+Sweden            25000           12%
